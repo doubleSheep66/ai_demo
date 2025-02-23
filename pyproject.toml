@@ -1,0 +1,26 @@
+[project]
+name = "ai_demo"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "ouyangyang",email = "1412356781@qq.com"}
+]
+readme = "README.md"
+requires-python = "^3.9"
+dependencies = [
+    "langchain (>=0.3.19,<0.4.0)",
+    "langchain-openai (>=0.3.6,<0.4.0)",
+    "langserve[all] (>=0.3.1,<0.4.0)",
+    "langchain-cli (>=0.0.35,<0.0.36)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[[tool.poetry.source]]
+name = "mirrors"
+url = "https://pypi.tuna.tsinghua.edu.cn/simple/"
+priority = "primary"
+
